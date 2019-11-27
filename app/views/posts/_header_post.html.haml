@@ -1,0 +1,18 @@
+.globalheader
+  .header
+    .header_container
+      .header-left
+        %p.header-left__logo StudySpace
+        %ul.header-left__serach
+          %li.header-left__search__box
+            %input.login-input-text{:name => "search", :placeholder => "わからない事を検索してね", :type => "search",:value => ""}/
+            %i.fa.fa-search
+      .header-right
+        %a.header-right__stock
+          %span.fa.fa-folder-open
+          %span.header-right__stock--label ストック一覧
+        %a.header-right__post
+          %span.fa.fa-edit 投稿する
+        .u-relative            
+          .header-right__loginUser
+            %span.fa.fa-user

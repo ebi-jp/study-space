@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: #66CCFF;
+  .header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    .header-left{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      .header-left__logo{
+        width: 74px;
+        height: 25px;
+        color: #FF773E;
+        font-size: 28px;
+        margin-right: 100px;
+        margin-bottom: 19px;
+        font-family: arial black;
+      }
+      &__search__box{
+        margin-left: 50px;
+        width: 200px;
+        position: relative;
+        .fa.fa-search{
+          color: #aaa;
+          position: absolute;
+          top: 9px;
+          left: 280px;
+
+        }
+        .login-input-text{
+          width: 300px;
+          height: 32px;
+          border: none;
+          font-family: arial black;
+          color: #aaa;
+        }
+        .fa.fa-search{
+          float: right;
+        }
+      }
+    }
+    .header-right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      &__stock{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &--label{
+          font-family: arial black;
+        }
+      }
+      &__post{
+      padding-right: 20px;
+      padding-left: 20px;
+      }
+      .u-relative{
+        margin-right: 20px;
+      }
+    }
+  }
+}
