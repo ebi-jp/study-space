@@ -1,0 +1,24 @@
+.globalheader
+  .header
+    .header_container
+      .header-left
+        %p.header-left__logo StudySpace
+        %ul.header-left__serach
+          %li.header-left__search__box
+            %input.login-input-text{:name => "search", :placeholder => "わからない事を検索してね", :type => "search",:value => ""}/
+            %i.fa.fa-search
+      .header-right
+        %a.header-right__stock
+          %span.fa.fa-folder-open
+          %span.header-right__stock--label ストック一覧
+        %a.header-right__post
+          %span.fa.fa-edit 投稿する
+        .u-relative            
+          .header-right__loginUser
+            #nav-drawer
+              %input#nav-input.nav-unshown{:type => "checkbox"}/
+              %label#nav-open{:for => "nav-input"}
+                %span
+              %label#nav-close.nav-unshown{:for => "nav-input"}
+              #nav-content
+                = link_to "ログアウト", destroy_user_session_path, method: :delete 
