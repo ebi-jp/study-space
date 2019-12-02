@@ -20,7 +20,7 @@
       justify-content: center;
       height: 100%;
       position: relative;
-      .header-left__logo{
+      .header__title--text{
         width: 74px;
         height: 25px;
         color: #FF773E;
@@ -28,6 +28,7 @@
         margin-right: 100px;
         margin-bottom: 19px;
         font-family: arial black;
+        text-decoration: none;
       }
       &__search__box{
         margin-left: 50px;
@@ -65,7 +66,6 @@
         }
       }
       &__post{
-      padding-right: 30px;
       padding-left: 30px;
       }
       .u-relative{
@@ -78,6 +78,12 @@
   }
 }
 
+.header__right--btn{
+  color: #fff;
+  font-family: arial black;
+  text-decoration: none;
+  padding-right: 30px;
+}
 
 
 #nav-drawer {
