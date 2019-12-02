@@ -15,8 +15,8 @@
               %span
                 by
               %a.tr-Item_author{href:"/goemp"}
-              -# = post.user.name
+              = post.user.name
               %time
-              = post.created_at
+              = post.created_at.strftime("%Y/%m/%d %H:%M")
               .tr-Item_likeCount
               %span.fa.fa-thumbs-up.mr-1of2
