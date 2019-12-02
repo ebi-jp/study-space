@@ -9,7 +9,8 @@
               %img{alt:"goemp", src:""}/
           .tr-Item_body
             %a.tr-Item_title{href:"/goemp/items/91dcc8b50d7a61ce98bc"}
-            = post.title
+            -# = post.title
+            = link_to post.title, post_path(post.id),class: "tr-Item__title--link"
             .tr-Item_meta
               %span
                 by

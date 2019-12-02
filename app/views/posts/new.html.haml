@@ -15,8 +15,8 @@
             .editorBody-content
               .editorBody-picture
                 .editorBody-imagePicture
-                = form.label :image, class: :form__control do
-                  %a.fa.fa-picture-o
+                = form.file_field :image, class: :form__control do
+                  = icon("fas", "fa-picture-o", class: "icon")
             .editorBody-text
               .editorBody-text-content
                 = form.text_area :content, placeholder: :ブログ本文, class: :form__text

@@ -10,10 +10,12 @@
             %i.fa.fa-search
       .header-right
         %a.header-right__stock
-          %span.fa.fa-folder-open
-          %span.header-right__stock--label ストック一覧
+          -if user_signed_in?
+            %span.fa.fa-folder-open
+            %span.header-right__stock--label ストック一覧
         %a.header-right__post 
-          %span.fa.fa-edit
+          - if user_signed_in?
+            %span.fa.fa-edit
             = link_to "投稿する", '/posts/new', class: "header__right--btn"
         .u-relative            
           .header-right__loginUser
@@ -24,3 +26,5 @@
               %label#nav-close.nav-unshown{for: "nav-input"}
               #nav-content
                 = link_to "ログアウト", destroy_user_session_path, method: :delete 
+                = link_to "ログイン", new_user_session_path, class: "header__right--login"
+                = link_to "新規登録", new_user_registration_path, class: "header-right__registration"
