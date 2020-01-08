@@ -26,9 +26,14 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-    <div class="field">
+  <div class="field">
     <%= f.label :grade %><br />
     <%= f.number_field :grade, autofocus: true, autocomplete: "grade" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.file_field :image, autofocus: true, autocomplete: "image" %>
   </div>
 
   <div class="actions">
