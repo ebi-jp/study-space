@@ -3,67 +3,73 @@
 }
 
 .main{
-  padding-top: 32px;
+  padding-top: 50px;
+  background-color: #F5F5F5;
+  height: 100vh;
   .main_container{
-    max-width: 1200px;
+    max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    background-color: white;
     .main-menu{
-      margin-bottom: 24px;
       &__item{
-        display: flex;
-        width: 100%;
-        font-size: 1.4rem;
-        border-bottom: 1px solid #e8e8e8;
-        padding: 16px;
-        .tr-Item{
+        &--show{
+          padding: 16px;
+          border-bottom: 1px solid #e8e8e8;
           display: flex;
-          overflow: hidden;
-          border-radius: .2em;
-          width: 40px;
-          height: 40px;
-          flex-shrink: 0;
-          margin-top: 2px;
-          margin-right: 8px;
-          .tr-Item_userImage{
-            width: 100%;
-            height: 100%;
-            border-radius: .2em;
-          }
-        }
-        .tr-Item_body{
-          flex: 1 1;
-          .tr-Item_title{
-            display: inline-block;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-            color: inherit;
-            line-height: 1.4;
-            word-wrap: break-word;
-            word-break: break-all;
-            text-decoration: none;
-          }
-          .tr-Item_meta{
+          .tr-Item{
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            color: #999;
-            font-size: .9em;
-            .tr-Item_author{
-              margin-left: 4px;
+            overflow: hidden;
+            border-radius: .2em;
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            margin-right: 8px;
+            .tr-Item_userImage{
+              width: 100%;
+              height: 100%;
+              border-radius: .2em;
+            }
+          }
+          .tr-Item_body{
+            .tr-Item__title--link{
+              display: inline-block;
+              font-size: 1.6rem;
+              font-weight: 700;
+              margin-bottom: 4px;
               color: inherit;
-              margin-right: 8px;
+              line-height: 1.4;
+              word-wrap: break-word;
+              word-break: break-all;
               text-decoration: none;
+              
             }
-            .tr-Item_likeCount{
-              margin: 0 8px;
-            }
-            .fa.fa-thumps-up.mr-lof2{
-              margin-right: 4px;
+            .tr-Item_meta{
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              color: #999;
+              font-size: .9em;
+              .tr-Item_author{
+                margin-left: 4px;
+              }
+              .content__right__bottom--userName--btn{
+                margin-right: 5px;
+                color: #999;
+                
+              }
+              .tr-Item_likeCount{
+                margin: 0 8px;
+              }
+              .fa.fa-thumps-up.mr-lof2{
+                margin-right: 4px;
+              }
             }
           }
         }
+        
+        
       }
     }
   }
