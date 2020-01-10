@@ -7,8 +7,7 @@
         - @posts.each do |post|
           .main-menu__item--show
             .tr-Item
-              %a.tr-Item_userImage{href:"/goemp"}
-                %img{alt:"goemp", src:""}/
+              = image_tag post.user.image.url, class:"tr-Item_image"
             .tr-Item_body
               .tr-Item_title{href:"/goemp/items/91dcc8b50d7a61ce98bc"}
               = link_to post.title, post_path(post.id),class: "tr-Item__title--link"
