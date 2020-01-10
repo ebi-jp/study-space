@@ -44,6 +44,9 @@
               text-decoration: none;
               
             }
+            .tr-Item__title--link:hover{
+              text-decoration: underline;
+              }
             .tr-Item_meta{
               display: flex;
               flex-wrap: wrap;
@@ -58,6 +61,9 @@
                 color: #999;
                 text-decoration: none;
               }
+              .content__right__bottom--userName--btn:hover{
+                text-decoration: underline;
+                }
               .tr-Item_likeCount{
                 margin: 0 8px;
               }
