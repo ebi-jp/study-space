@@ -17,6 +17,9 @@
   &__content{
     width: 900px;
   }
+  .editorBody-text-submit{
+    display: flex;
+  }
   .form{
     &__title{
       width: 900px;
@@ -38,15 +41,18 @@
       border: 1px solid #e0e0e0;
       font-size: 20px;
     }
-    &__image{
-
+    .fa{
+      margin-left: 450px;
+      margin-right: -350px;
     }
+   
     &__btn{
       background-color: #66CCFF;
       color: white;
       width: 100px;
       height:40px;
       margin: 0 auto;
+      margin-top: 5px;
     }
   }
 }
