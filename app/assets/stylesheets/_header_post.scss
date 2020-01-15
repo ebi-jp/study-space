@@ -165,3 +165,42 @@
   transform: translateX(0%);/*中身を表示（右へスライド）*/
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
+.header-right__account{
+  color: #FF773E;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  margin-left: 70px;
+}
+.header-right__account:hover{
+  text-decoration: underline;
+}
+.header-right__destroy{
+  color: #FF773E;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 70px;
+}
+.header-right__destroy:hover{
+  text-decoration: underline;
+}
+
+.header__right--login{
+  color: #FF773E;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  margin-left: 97px;
+}
+.header__right--login:hover{
+  text-decoration: underline;
+}
+.header-right__registration{
+  color: #FF773E;
+  text-decoration: none;
+  font-size: 27px;
+  margin-left: 97px;
+}
+.header-right__registration:hover{
+  text-decoration: underline;
+}
