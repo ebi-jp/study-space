@@ -14,9 +14,10 @@
         = @post.tag
       .s.post__image
         = image_tag @post.image.url, class: 'lower-message__image' if @post.image.present?
+      .s.post__content
+        = simple_format @post.content
       .s.post__edit
         - if user_signed_in? && current_user.id == @post.user_id
           = link_to '編集', edit_post_path(@post.id), class: "postManage__edit"
           = link_to '削除', post_path(@post.id), method: :delete, class: "postManage__delete"
-      .s.post__content
-        = simple_format @post.content
+      

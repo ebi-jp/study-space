@@ -35,14 +35,14 @@
             .tr-Item__title--link{
               display: inline-block;
               font-size: 1.6rem;
-              font-weight: 700;
+              font-weight: 550;
               margin-bottom: 4px;
               color: inherit;
               line-height: 1.4;
               word-wrap: break-word;
               word-break: break-all;
               text-decoration: none;
-              
+              font-family: arial;
             }
             .tr-Item__title--link:hover{
               text-decoration: underline;
@@ -60,6 +60,7 @@
                 margin-right: 5px;
                 color: #999;
                 text-decoration: none;
+                font-family: arial;
               }
               .content__right__bottom--userName--btn:hover{
                 text-decoration: underline;
