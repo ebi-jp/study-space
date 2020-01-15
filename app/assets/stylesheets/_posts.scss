@@ -56,3 +56,47 @@
     }
   }
 }
+
+
+// showのcss
+
+.s.post{
+  padding-top: 50px;
+  background-color: #F5F5F5;
+  height: 100vh;
+  &__main{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    &__show{
+      width: 700px;
+      margin: 0 auto;
+      &--user{
+        display: flex;
+      }
+    }
+  }
+  &__user__image{
+    width: 40px;
+    height: 40px;
+    .user__image--tag{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  &__user--name{
+    margin-top: 12px;
+    margin-left: 15px;
+    .post__user--info{
+      margin-right: 5px;
+      color: black;
+      text-decoration: none;
+    }
+    .post__user--info:hover{
+      text-decoration: underline;
+      }
+  }
+  
+}
