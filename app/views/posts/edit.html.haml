@@ -1,8 +1,19 @@
 = render "posts/header_post"
-.content__edit 投稿の編集
-= form_with model: @post, class: :form, local: true do |form|
-  =form.text_field :title, placeholder: :タイトル, class: :form__title
-  =form.text_field :tag, placeholder: :タグ, class: :form__tag
-  =form.file_field :image, class: :form__control
-  =form.text_field :content, placeholder: :本文, class: :form__content
-  =form.submit '投稿する', class: :form__btn
+.editor
+  .editor__form
+    .editor__content
+    = form_with model: @post, class: "form", local: true do |form|
+      .editorTitle
+        = form.text_field :title, placeholder: :タイトル, class: "form__title" 
+      .editorTag
+        .editorTag-text
+          .textoverlay
+          =form.text_field :tag, placeholder: :関連する教科のタグをつけてね, class: "form__tag"
+        .editorBody-text
+          .editorBody-text-content
+            = form.text_area :content, placeholder: :ブログ本文, class: "form__text"
+          .editorBody-text-submit
+            = form.label :image do
+              %i.fa.fa-image.fa-3x
+              = form.file_field :image, autofocus: true, class: "form__image",style: "display:none"
+            = form.submit '編集する', class: "form__btn"
