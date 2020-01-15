@@ -18,6 +18,15 @@
     margin-left: auto;
     background-color: white;
     .main-menu{
+      &__user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        border-bottom: 1px solid #e8e8e8;
+        height: 50px;
+        font-family: arial;
+      }
       &__item{
         &--show{
           padding: 16px;
