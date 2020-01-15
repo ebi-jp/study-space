@@ -109,6 +109,8 @@
     font-family: arial;
     letter-spacing: 0.12em;
     margin-bottom: 5px;
+    word-wrap: break-word;
+    line-height: 1.2;
   }
   &__tag{
     background-color: #e7e7e7;
