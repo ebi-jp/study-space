@@ -1,7 +1,8 @@
 
 .l.user__form
   .l.user__form__content
-    .l.user__form__title study space
+    .l.user__form__title 
+    = link_to  'StudySpace','/', class: "header__title__login--text"
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
         = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "メールアドレス",class:"field_box"
