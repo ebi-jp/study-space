@@ -65,7 +65,8 @@
 .s.post{
   padding-top: 50px;
   background-color: #F5F5F5;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   &__main{
     max-width: 800px;
     margin-right: auto;
@@ -124,8 +125,8 @@
   }
   &__image{
     .lower-message__image{
-      width: 400px;
-      height: 400px;
+      width: 700px;
+      height: 700px;
       margin: 0 auto;
     }
   }
