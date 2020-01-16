@@ -1,0 +1,163 @@
+.editor{
+  background-color: #f5f5f5;
+  height: 100vh;
+  position: relative;
+  &__form{
+    text-align: center;
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__content{
+    width: 900px;
+  }
+  .editorBody-text-submit{
+    display: flex;
+  }
+  .form{
+    &__title{
+      width: 900px;
+      height: 60px;
+      margin-top: 20px;
+      border: 1px solid #e0e0e0;
+      font-size: 30px;
+    }
+    &__tag{
+      width: 900px;
+      height: 60px;
+      border: 1px solid #e0e0e0;
+      font-size: 20px;
+    }
+    &__text{
+      width: 900px;
+      height: 600px;
+      overflow: scroll;
+      border: 1px solid #e0e0e0;
+      font-size: 20px;
+    }
+    .fa{
+      margin-left: 450px;
+      margin-right: -350px;
+    }
+   
+    &__btn{
+      background-color: #66CCFF;
+      color: white;
+      width: 100px;
+      height:40px;
+      margin: 0 auto;
+      margin-top: 5px;
+      font-family: arial;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+// showのcss
+
+.s.post{
+  padding-top: 50px;
+  background-color: #F5F5F5;
+  height: 100%;
+  min-height: calc(100vh - 200px);
+  &__main{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    &__show{
+      width: 700px;
+      margin: 0 auto;
+      &--user{
+        display: flex;
+        padding-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__user__image{
+    width: 40px;
+    height: 40px;
+    .user__image--tag{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  &__user--name{
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 20px;
+    .post__user--info{
+      margin-right: 5px;
+      color: black;
+      text-decoration: none;
+    }
+    .post__user--info:hover{
+      text-decoration: underline;
+      }
+  }
+  &__title{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: arial;
+    letter-spacing: 0.12em;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    line-height: 1.2;
+  }
+  &__tag{
+    background-color: #e7e7e7;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+  &__image{
+    .lower-message__image{
+      width: 700px;
+      height: 700px;
+      margin: 0 auto;
+    }
+  }
+  &__content{
+    width: 700px;
+    height: 100%;
+    font-size: 20px;
+    font-family: arial;
+    vertical-align: left;
+    word-wrap: break-word;
+    letter-spacing: 0.12em;
+    line-height: 25px;
+    padding-bottom: 30px;
+  }
+  &__edit{
+    padding-bottom: 20px;
+    .postManage__edit{
+      background-color: #66CCFF;
+      color: white;
+      padding: 10px;
+      font-family: arial;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .postManage__delete{
+      background-color: #66CCFF;
+      color: white;
+      padding: 10px;
+      font-family: arial;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  }
+}

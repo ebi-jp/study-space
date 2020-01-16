@@ -1,16 +1,25 @@
-.postTitle
-  = @user.name 
-  さんの投稿一覧
-  .postTitle-edit
-    -@posts.each do |post|
-      .content
-        .content__left
-          .content__left--image
-        .content__right
-          .content__right__top
-            = link_to post.title, post_path(post.id), class: "content__right__top--title"
-          .content__right__bottom
-            .content__right__bottom--userName
-              = link_to post.user.name, user_path(post.user), class: "content__right__bottom--userName--btn"
-            .content__right__bottom--date
-              = post.created_at.strftime("%Y/%m/%d %H:%M")
+= render "posts/header_post"
+.main
+  .main_container
+    .main-menu
+      .main-menu__user
+        = @user.name 
+        さんの投稿一覧
+      .main-menu__post
+        .main-menu__item
+        - @posts.each do |post|
+          .main-menu__item--show
+            .tr-Item
+              = image_tag post.user.image.url, class:"tr-Item_image"
+            .tr-Item_body
+              .tr-Item_title{href:"/goemp/items/91dcc8b50d7a61ce98bc"}
+              = link_to post.title, post_path(post.id),class: "tr-Item__title--link"
+              .tr-Item_meta
+                %span
+                  by
+                %a.tr-Item_author{href:"/goemp"}
+                = link_to post.user.name, user_path(post.user), class: "content__right__bottom--userName--btn"
+                %time
+                = post.created_at.strftime("%Y/%m/%d %H:%M")
+    = paginate @posts
+= render "posts/footer"

@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_29_052116) do
+ActiveRecord::Schema.define(version: 2020_01_15_105931) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
-    t.string "content"
+    t.text "content"
     t.string "image"
     t.string "tag"
     t.bigint "user_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_11_29_052116) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "grade", default: "", null: false
+    t.string "image"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

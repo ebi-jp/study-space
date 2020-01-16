@@ -1,0 +1,55 @@
+.user__form{
+  background-color: #f5f5f5;
+  height: 100vh;
+  position: relative;
+  &__content{
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+  }
+
+  .header__title__signup--text{
+    color: #FF773E;
+    font-family: arial black;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    }
+    .header__title__login--text{
+      color: #FF773E;
+    font-family: arial black;
+    font-size: 2.5rem;
+    text-decoration: none;
+    }
+  
+  .field_box{
+    height: 35px;
+    width: 280px;
+    margin-top: 10px;
+  }
+  .field_submit{
+    
+    background-color: rgb(102, 194, 255);
+    color: white;
+    height: 35px;
+    width: 280px;
+    margin-top: 20px;
+  }
+
+  .link_login{
+    text-decoration: none;
+    color: rgb(102, 194, 255);
+  }
+  &__login{
+    margin-top: 10px;
+  }
+
+}

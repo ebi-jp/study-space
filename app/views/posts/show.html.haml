@@ -1,12 +1,23 @@
-.postTitle
-  = @post.title
-.postTag 
-  = @post.tag
-.postImage
-  = image_tag @post.image.url, class: 'lower-message__image' if @post.image.present?
-.postEdit
-  - if user_signed_in? && current_user.id == @post.user_id
-    = link_to '編集', edit_post_path(@post.id), class: "postManage__edit"
-    = link_to '削除', post_path(@post.id), method: :delete, class: "postManage__delete"
-.postContent
-  = simple_format @post.content
+= render "posts/header_post"
+.s.post
+  .s.post__main
+    .s.post__main__show
+      .s.post__main__show--user
+        .s.post__user__image
+          = image_tag @post.user.image.url , class: "user__image--tag"
+        .s.post__user--name
+          = link_to @post.user.name, user_path(@post.user),class:"post__user--info"
+          = @post.created_at.strftime("%Y/%m/%d %H:%M")
+      .s.post__title
+        = @post.title
+      .s.post__tag 
+        = @post.tag
+      .s.post__image
+        = image_tag @post.image.url, class: 'lower-message__image' if @post.image.present?
+      .s.post__content
+        = simple_format @post.content
+      .s.post__edit
+        - if user_signed_in? && current_user.id == @post.user_id
+          = link_to '編集', edit_post_path(@post.id), class: "postManage__edit"
+          = link_to '削除', post_path(@post.id), method: :delete, class: "postManage__delete"
+= render "posts/footer"

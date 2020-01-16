@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.all.includes(:user).order("created_at DESC")
+    @posts = Post.page(params[:page]).includes(:user).order("created_at DESC").per(10)
     # orderで投稿の順番を上が最新になるように実装
   end
 
