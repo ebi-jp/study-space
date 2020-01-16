@@ -122,6 +122,13 @@
     display: inline-block;
     margin-bottom: 60px;
   }
+  &__image{
+    .lower-message__image{
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  }
   &__content{
     width: 700px;
     height: 100%;
