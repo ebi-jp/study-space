@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: study-space_production
-  username: study-space
+  database: postgresql
+  username: unicode
+  pool: 10
   password: <%= ENV['STUDY-SPACE_DATABASE_PASSWORD'] %>
