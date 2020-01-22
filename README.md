@@ -17,3 +17,22 @@
 
 ### Association
 - has_many :posts
+
+
+## postsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string||
+|content|text||
+|image|string||
+|tag|string||
+|user_id|bigint||
+|created_at|datetime|null: false|
+|updated_at|datetime|null: false|
+
+### Association
+- belongs_to :posts
+
+## Association
+- add_foreign_key "posts", "users"
