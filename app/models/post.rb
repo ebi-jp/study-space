@@ -3,6 +3,7 @@ class Post < ApplicationRecord
 
   validates :content, presence: true, unless: :image?
   validates :title, presence: true
+  validates :content, presence: true
 
   mount_uploader :image, ImageUploader
 end
