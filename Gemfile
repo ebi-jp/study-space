@@ -74,7 +74,7 @@ gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'kaminari', '~> 0.17.0'
+gem 'kaminari', '~> 1.2.1'
 gem 'fog-aws' 
 
 group :production do
